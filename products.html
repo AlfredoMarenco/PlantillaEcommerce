@@ -1,0 +1,593 @@
+<!DOCTYPE html>
+<html lang="es">
+  <head>
+    <meta charset="utf-8" />
+    <meta http-equiv="pragma" content="no-cache" />
+    <meta http-equiv="cache-control" content="max-age=604800" />
+    <meta
+      name="viewport"
+      content="width=device-width, initial-scale=1, shrink-to-fit=no"
+    />
+
+    <title>Website title - bootstrap html template</title>
+
+    <link href="images/favicon.ico" rel="shortcut icon" type="image/x-icon" />
+
+    <!-- jQuery -->
+    <script src="js/jquery-2.0.0.min.js" type="text/javascript"></script>
+
+    <!-- Bootstrap4 files-->
+
+    <link href="css/bootstrap.css" rel="stylesheet" type="text/css" />
+
+    <!-- Font awesome 5 -->
+    <link
+      href="fonts/fontawesome/css/all.min.css"
+      type="text/css"
+      rel="stylesheet"
+    />
+
+    <!-- custom style -->
+    <link rel="preconnect" href="https://fonts.gstatic.com" />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Bebas+Neue&display=swap"
+      rel="stylesheet"
+    />
+
+    <link rel="stylesheet" href="/css/style.css" />
+    <link href="css/ui.css" rel="stylesheet" type="text/css" />
+    <link href="css/responsive.css" rel="stylesheet" type="text/css" />
+
+    <!-- custom javascript -->
+    <script src="js/script.js" type="text/javascript"></script>
+  </head>
+  <body>
+      <nav class="navbar navbar-expand-lg navbar-light bg-light fixed-top">
+          <div class="container">
+            <a class="navbar-brand" href="#"
+              ><img
+                src="/images/rene/logo-nav.png"
+                alt=""
+                width="auto"
+                height="34"
+                class="d-inline-block align-top"
+            /></a>
+            <button
+              class="navbar-toggler"
+              type="button"
+              data-bs-toggle="collapse"
+              data-bs-target="#navbarNav"
+              aria-controls="navbarNav"
+              aria-expanded="false"
+              aria-label="Toggle navigation"
+            >
+              <span class="navbar-toggler-icon"></span>
+            </button>
+            <div class="collapse navbar-collapse" id="navbarNav">
+              <ul class="navbar-nav ml-auto">
+                <li class="nav-item ms-2">
+                  <a class="nav-link active" aria-current="page" href="#">Inicio</a>
+                </li>
+                <li class="nav-item ms-2">
+                  <a class="nav-link" href="/products.html">Hombre</a>
+                </li>
+                <li class="nav-item ms-2">
+                  <a class="nav-link" href="/products.html">Mujer</a>
+                </li>
+                <li class="nav-item ms-2">
+                  <a
+                    class="nav-link"
+                    href="/products.html"
+                    tabindex="-1"
+                    aria-disabled="true"
+                    >Tienda</a
+                  >
+                </li>
+                <li class="nav-item ms-2">
+                  <a class="nav-link" href="#" tabindex="-1" aria-disabled="true"
+                    >Blog</a
+                  >
+                </li>
+                <li class="nav-item ms-2">
+                  <a class="nav-link" href="#" tabindex="-1" aria-disabled="true"
+                    >Ofertas</a
+                  >
+                </li>
+                <li class="nav-item ms-2">
+                  <a class="nav-link" href="#" tabindex="-1" aria-disabled="true"
+                    >Login</a
+                  >
+                </li>
+    
+                <li class="nav-item dropdown">
+                  <a
+                    class="nav-link"
+                    href="#"
+                    id="navbarDropdown"
+                    role="button"
+                    data-toggle="dropdown"
+                    aria-haspopup="true"
+                    aria-expanded="false"
+                  >
+                    <i class="fas fa-shopping-bag"> <small>4</small></i>
+                  </a>
+                  <div class="dropdown-menu dropdown-menu-right"
+                    aria-labelledby="navbarDropdown" style="min-width: 20rem;">
+                    <div class="d-flex justify-content-around align-items-center">
+                         <img src="/images/items/1.jpg" class="img-fluid" width="20%" alt="">
+                         <p class="row">
+                           <b class="col-12">Playera de joto</b>
+                           <small class="col-12"><span>1x </span> $599.00</small>
+                         </p>
+                    </div>
+                    <div class="dropdown-divider"></div>
+                    <div class="d-flex justify-content-around align-items-center">
+                      <div class="font-weight-bold">Subtotal:</div>
+                      <div class="font-weight-bold">$599.00</div>
+                    </div> 
+                    <div class="px-3 py-2">
+                        <a class="btn btn-dark btn-block" href="/cart.html">Ir al carrito</a>                  
+                    </div>                 
+                  </div>
+                   
+                </li>
+    
+                <!--
+                <li class="nav-item ms-2">
+                  <a class="nav-link" 
+                  href="#" tabindex="-1" 
+                  aria-disabled="true"
+                  >
+                  <i class="fas fa-shopping-bag">
+                    </i
+                  ></a>
+                </li> -->
+                <li class="nav-item ms-2">
+                  <a class="nav-link" href="#" tabindex="-1" aria-disabled="true">
+                    <i class="fas fa-user-alt"></i>
+                  </a>
+                </li>
+              </ul>
+            </div>
+          </div>
+        </nav>
+
+    <!-- ========================= SECTION CONTENT ========================= -->
+    <section class="section-content padding-y">
+      <div class="container pt-4">
+        <!-- ============================  FILTER TOP  ================================= -->
+        <div class="card mb-3 mt-4">
+          <div class="card-body">
+            <div class="row">
+              <div class="col-md-2">Filter by</div>
+              <!-- col.// -->
+              <div class="d-flex justify-content-end col-md-10">
+                <ul class="list-inline">
+                  <li class="list-inline-item mr-3"><a href="#">Color</a></li>
+                  <li class="list-inline-item mr-3"><a href="#">Size</a></li>
+                  <li class="list-inline-item mr-3">
+                    <div class="form-inline">
+                      <label class="mr-2">Price</label>
+                      <input
+                        class="form-control form-control-sm"
+                        placeholder="Min"
+                        type="number"
+                      />
+                      <span class="px-2"> - </span>
+                      <input
+                        class="form-control form-control-sm"
+                        placeholder="Max"
+                        type="number"
+                      />
+                      <button type="submit" class="btn btn-sm btn-light ml-2">
+                        Ok
+                      </button>
+                    </div>
+                  </li>
+                  <li class="list-inline-item mr-3">
+                    <label class="custom-control mt-1 custom-checkbox">
+                      <input type="checkbox" class="custom-control-input" />
+                      <div class="custom-control-label">Ready to ship</div>
+                    </label>
+                  </li>
+                </ul>
+              </div>
+              <!-- col.// -->
+            </div>
+            <!-- row.// -->
+          </div>
+          <!-- card-body .// -->
+        </div>
+        <!-- card.// -->
+        <!-- ============================ FILTER TOP END.// ================================= -->
+
+        <header class="mb-3">
+          <div class="form-inline">
+            <strong class="mr-md-auto">32 Items found </strong>
+        </header>
+        <!-- sect-heading -->
+
+        <div class="row">
+          <div class="col-md-3">
+            <figure class="card card-product-grid">
+              <div class="img-wrap">
+                <span class="badge badge-danger"> DESCUENTO </span>
+                <img src="images/items/1.jpg" />
+              </div>
+              <!-- img-wrap.// -->
+              <figcaption class="info-wrap">
+                <a href="#" class="title mb-2">Camisa Algodón</a>
+                <div class="price-wrap">
+										<strike><span class="price">Antes: $30.00</span></strike>
+										<span class="price"> / </span>
+                  <span class="price" style="color: green;">Ahora: $30.00</span>
+                  <small class="text-muted">/Cada una</small>
+                </div>
+                <!-- price-wrap.// -->
+                <div class="rating-wrap mb-2">
+                  <ul class="rating-stars">
+                    <li style="width: 100%;" class="stars-active">
+                      <i class="fa fa-star"></i> <i class="fa fa-star"></i>
+                      <i class="fa fa-star"></i> <i class="fa fa-star"></i>
+                      <i class="fa fa-star"></i>
+                    </li>
+                    <li>
+                      <i class="fa fa-star"></i> <i class="fa fa-star"></i>
+                      <i class="fa fa-star"></i> <i class="fa fa-star"></i>
+                      <i class="fa fa-star"></i>
+                    </li>
+                  </ul>
+                  <div class="label-rating">9/10</div>
+                </div>
+                <!-- rating-wrap.// -->
+                <hr />
+                <a href="#" class="btn btn-dark"> Añadir al carrito </a>
+              </figcaption>
+            </figure>
+          </div>
+					<!-- col.// -->
+					<div class="col-md-3">
+							<figure class="card card-product-grid">
+								<div class="img-wrap">
+									<span class="badge badge-danger"> DESCUENTO </span>
+									<img src="images/items/1.jpg" />
+								</div>
+								<!-- img-wrap.// -->
+								<figcaption class="info-wrap">
+									<a href="#" class="title mb-2">Camisa Algodón</a>
+									<div class="price-wrap">
+											<strike><span class="price">Antes: $30.00</span></strike>
+											<span class="price"> / </span>
+										<span class="price" style="color: green;">Ahora: $30.00</span>
+										<small class="text-muted">/Cada una</small>
+									</div>
+									<!-- price-wrap.// -->
+									<div class="rating-wrap mb-2">
+										<ul class="rating-stars">
+											<li style="width: 100%;" class="stars-active">
+												<i class="fa fa-star"></i> <i class="fa fa-star"></i>
+												<i class="fa fa-star"></i> <i class="fa fa-star"></i>
+												<i class="fa fa-star"></i>
+											</li>
+											<li>
+												<i class="fa fa-star"></i> <i class="fa fa-star"></i>
+												<i class="fa fa-star"></i> <i class="fa fa-star"></i>
+												<i class="fa fa-star"></i>
+											</li>
+										</ul>
+										<div class="label-rating">9/10</div>
+									</div>
+									<!-- rating-wrap.// -->
+									<hr />
+									<a href="#" class="btn btn-dark"> Añadir al carrito </a>
+								</figcaption>
+							</figure>
+						</div>
+						<!-- col.// -->
+						<div class="col-md-3">
+								<figure class="card card-product-grid">
+									<div class="img-wrap">
+										<span class="badge badge-danger"> DESCUENTO </span>
+										<img src="images/items/1.jpg" />
+									</div>
+									<!-- img-wrap.// -->
+									<figcaption class="info-wrap">
+										<a href="#" class="title mb-2">Camisa Algodón</a>
+										<div class="price-wrap">
+												<strike><span class="price">Antes: $30.00</span></strike>
+												<span class="price"> / </span>
+											<span class="price" style="color: green;">Ahora: $30.00</span>
+											<small class="text-muted">/Cada una</small>
+										</div>
+										<!-- price-wrap.// -->
+										<div class="rating-wrap mb-2">
+											<ul class="rating-stars">
+												<li style="width: 100%;" class="stars-active">
+													<i class="fa fa-star"></i> <i class="fa fa-star"></i>
+													<i class="fa fa-star"></i> <i class="fa fa-star"></i>
+													<i class="fa fa-star"></i>
+												</li>
+												<li>
+													<i class="fa fa-star"></i> <i class="fa fa-star"></i>
+													<i class="fa fa-star"></i> <i class="fa fa-star"></i>
+													<i class="fa fa-star"></i>
+												</li>
+											</ul>
+											<div class="label-rating">9/10</div>
+										</div>
+										<!-- rating-wrap.// -->
+										<hr />
+										<a href="#" class="btn btn-dark"> Añadir al carrito </a>
+									</figcaption>
+								</figure>
+							</div>
+							<!-- col.// -->
+							<div class="col-md-3">
+									<figure class="card card-product-grid">
+										<div class="img-wrap">
+											<span class="badge badge-danger"> DESCUENTO </span>
+											<img src="images/items/1.jpg" />
+										</div>
+										<!-- img-wrap.// -->
+										<figcaption class="info-wrap">
+											<a href="#" class="title mb-2">Camisa Algodón</a>
+											<div class="price-wrap">
+													<strike><span class="price">Antes: $30.00</span></strike>
+													<span class="price"> / </span>
+												<span class="price" style="color: green;">Ahora: $30.00</span>
+												<small class="text-muted">/Cada una</small>
+											</div>
+											<!-- price-wrap.// -->
+											<div class="rating-wrap mb-2">
+												<ul class="rating-stars">
+													<li style="width: 100%;" class="stars-active">
+														<i class="fa fa-star"></i> <i class="fa fa-star"></i>
+														<i class="fa fa-star"></i> <i class="fa fa-star"></i>
+														<i class="fa fa-star"></i>
+													</li>
+													<li>
+														<i class="fa fa-star"></i> <i class="fa fa-star"></i>
+														<i class="fa fa-star"></i> <i class="fa fa-star"></i>
+														<i class="fa fa-star"></i>
+													</li>
+												</ul>
+												<div class="label-rating">9/10</div>
+											</div>
+											<!-- rating-wrap.// -->
+											<hr />
+											<a href="#" class="btn btn-dark"> Añadir al carrito </a>
+										</figcaption>
+									</figure>
+								</div>
+								<!-- col.// -->
+								<div class="col-md-3">
+										<figure class="card card-product-grid">
+											<div class="img-wrap">
+												<span class="badge badge-danger"> DESCUENTO </span>
+												<img src="images/items/1.jpg" />
+											</div>
+											<!-- img-wrap.// -->
+											<figcaption class="info-wrap">
+												<a href="#" class="title mb-2">Camisa Algodón</a>
+												<div class="price-wrap">
+														<strike><span class="price">Antes: $30.00</span></strike>
+														<span class="price"> / </span>
+													<span class="price" style="color: green;">Ahora: $30.00</span>
+													<small class="text-muted">/Cada una</small>
+												</div>
+												<!-- price-wrap.// -->
+												<div class="rating-wrap mb-2">
+													<ul class="rating-stars">
+														<li style="width: 100%;" class="stars-active">
+															<i class="fa fa-star"></i> <i class="fa fa-star"></i>
+															<i class="fa fa-star"></i> <i class="fa fa-star"></i>
+															<i class="fa fa-star"></i>
+														</li>
+														<li>
+															<i class="fa fa-star"></i> <i class="fa fa-star"></i>
+															<i class="fa fa-star"></i> <i class="fa fa-star"></i>
+															<i class="fa fa-star"></i>
+														</li>
+													</ul>
+													<div class="label-rating">9/10</div>
+												</div>
+												<!-- rating-wrap.// -->
+												<hr />
+												<a href="#" class="btn btn-dark"> Añadir al carrito </a>
+											</figcaption>
+										</figure>
+									</div>
+									<!-- col.// -->
+									<div class="col-md-3">
+											<figure class="card card-product-grid">
+												<div class="img-wrap">
+													<span class="badge badge-danger"> DESCUENTO </span>
+													<img src="images/items/1.jpg" />
+												</div>
+												<!-- img-wrap.// -->
+												<figcaption class="info-wrap">
+													<a href="#" class="title mb-2">Camisa Algodón</a>
+													<div class="price-wrap">
+															<strike><span class="price">Antes: $30.00</span></strike>
+															<span class="price"> / </span>
+														<span class="price" style="color: green;">Ahora: $30.00</span>
+														<small class="text-muted">/Cada una</small>
+													</div>
+													<!-- price-wrap.// -->
+													<div class="rating-wrap mb-2">
+														<ul class="rating-stars">
+															<li style="width: 100%;" class="stars-active">
+																<i class="fa fa-star"></i> <i class="fa fa-star"></i>
+																<i class="fa fa-star"></i> <i class="fa fa-star"></i>
+																<i class="fa fa-star"></i>
+															</li>
+															<li>
+																<i class="fa fa-star"></i> <i class="fa fa-star"></i>
+																<i class="fa fa-star"></i> <i class="fa fa-star"></i>
+																<i class="fa fa-star"></i>
+															</li>
+														</ul>
+														<div class="label-rating">9/10</div>
+													</div>
+													<!-- rating-wrap.// -->
+													<hr />
+													<a href="#" class="btn btn-dark"> Añadir al carrito </a>
+												</figcaption>
+											</figure>
+										</div>
+										<!-- col.// -->
+										<div class="col-md-3">
+												<figure class="card card-product-grid">
+													<div class="img-wrap">
+														<span class="badge badge-danger"> DESCUENTO </span>
+														<img src="images/items/1.jpg" />
+													</div>
+													<!-- img-wrap.// -->
+													<figcaption class="info-wrap">
+														<a href="#" class="title mb-2">Camisa Algodón</a>
+														<div class="price-wrap">
+																<strike><span class="price">Antes: $30.00</span></strike>
+																<span class="price"> / </span>
+															<span class="price" style="color: green;">Ahora: $30.00</span>
+															<small class="text-muted">/Cada una</small>
+														</div>
+														<!-- price-wrap.// -->
+														<div class="rating-wrap mb-2">
+															<ul class="rating-stars">
+																<li style="width: 100%;" class="stars-active">
+																	<i class="fa fa-star"></i> <i class="fa fa-star"></i>
+																	<i class="fa fa-star"></i> <i class="fa fa-star"></i>
+																	<i class="fa fa-star"></i>
+																</li>
+																<li>
+																	<i class="fa fa-star"></i> <i class="fa fa-star"></i>
+																	<i class="fa fa-star"></i> <i class="fa fa-star"></i>
+																	<i class="fa fa-star"></i>
+																</li>
+															</ul>
+															<div class="label-rating">9/10</div>
+														</div>
+														<!-- rating-wrap.// -->
+														<hr />
+														<a href="#" class="btn btn-dark"> Añadir al carrito </a>
+													</figcaption>
+												</figure>
+											</div>
+											<!-- col.// -->
+											<div class="col-md-3">
+													<figure class="card card-product-grid">
+														<div class="img-wrap">
+															<span class="badge badge-danger"> DESCUENTO </span>
+															<img src="images/items/1.jpg" />
+														</div>
+														<!-- img-wrap.// -->
+														<figcaption class="info-wrap">
+															<a href="#" class="title mb-2">Camisa Algodón</a>
+															<div class="price-wrap">
+																	<strike><span class="price">Antes: $30.00</span></strike>
+																	<span class="price"> / </span>
+																<span class="price" style="color: green;">Ahora: $30.00</span>
+																<small class="text-muted">/Cada una</small>
+															</div>
+															<!-- price-wrap.// -->
+															<div class="rating-wrap mb-2">
+																<ul class="rating-stars">
+																	<li style="width: 100%;" class="stars-active">
+																		<i class="fa fa-star"></i> <i class="fa fa-star"></i>
+																		<i class="fa fa-star"></i> <i class="fa fa-star"></i>
+																		<i class="fa fa-star"></i>
+																	</li>
+																	<li>
+																		<i class="fa fa-star"></i> <i class="fa fa-star"></i>
+																		<i class="fa fa-star"></i> <i class="fa fa-star"></i>
+																		<i class="fa fa-star"></i>
+																	</li>
+																</ul>
+																<div class="label-rating">9/10</div>
+															</div>
+															<!-- rating-wrap.// -->
+															<hr />
+															<a href="#" class="btn btn-dark"> Añadir al carrito </a>
+														</figcaption>
+													</figure>
+												</div>
+												<!-- col.// -->
+
+
+        </div>
+        <!-- row end.// -->
+
+        <nav class="mb-4" aria-label="Page navigation sample">
+          <ul class="pagination">
+            <li class="page-item disabled">
+              <a class="page-link" href="#">Previous</a>
+            </li>
+            <li class="page-item active">
+              <a class="page-link" href="#">1</a>
+            </li>
+            <li class="page-item"><a class="page-link" href="#">2</a></li>
+            <li class="page-item"><a class="page-link" href="#">3</a></li>
+            <li class="page-item"><a class="page-link" href="#">4</a></li>
+            <li class="page-item"><a class="page-link" href="#">5</a></li>
+            <li class="page-item"><a class="page-link" href="#">Next</a></li>
+          </ul>
+        </nav>
+
+        
+    </section>
+    <!-- ========================= SECTION CONTENT END// ========================= -->
+
+    <!-- ========================= SECTION SUBSCRIBE  ========================= -->
+    <section class="padding-y-lg bg-light border-top">
+      <div class="container">
+        <p class="pb-2 text-center">
+          Delivering the latest product trends and industry news straight to
+          your inbox
+        </p>
+
+        <div class="row justify-content-md-center">
+          <div class="col-lg-4 col-sm-6">
+            <form class="form-row">
+              <div class="col-8">
+                <input
+                  class="form-control"
+                  placeholder="Your Email"
+                  type="email"
+                />
+              </div>
+              <!-- col.// -->
+              <div class="col-4">
+                <button type="submit" class="btn btn-block btn-warning">
+                  <i class="fa fa-envelope"></i> Subscribe
+                </button>
+              </div>
+              <!-- col.// -->
+            </form>
+            <small class="form-text"
+              >We’ll never share your email address with a third-party.
+            </small>
+          </div>
+          <!-- col-md-6.// -->
+        </div>
+      </div>
+    </section>
+    <!-- ========================= SECTION SUBSCRIBE END// ========================= -->
+
+    <!-- ========================= FOOTER ========================= -->
+    <footer class="bg-dark mt-4">
+        <div class="container text-center pt-2 pb-2">
+          <p class="text-white">
+            Todos los derechos reservados © Renealonso.com | Creado por
+            <a href="#" style="color: white;">Vandu</a>
+          </p>
+        </div>
+      </footer>
+    <!-- ========================= FOOTER END // ========================= -->
+
+    <script>
+      $(window).scroll(function () {
+        $("nav").toggleClass("scrolled", $(this).scrollTop() > 50);
+      });
+    </script>
+  </body>
+</html>
